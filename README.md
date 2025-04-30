@@ -29,12 +29,12 @@ This deep learning model takes an image as input and generates a descriptive cap
 
 ## 🧠 Model Architecture
 
-- **ViT Encoder:**
+- **ViT Encoder:** (https://huggingface.co/docs/transformers/model_doc/vit)
   - Pretrained on ImageNet21K
   - Parameters frozen (non-trainable)
   - ![img](https://production-media.paperswithcode.com/methods/Screen_Shot_2021-01-26_at_9.43.31_PM_uI4jjMq.png)
 
-- **GPT2 Decoder:**
+- **GPT2 Decoder:** (https://huggingface.co/openai-community/gpt2)
   - `gpt2` with `add_cross_attention=True`
   - `<|pad|>` token added for batching
   - Trained with causal language modeling loss
